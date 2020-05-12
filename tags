@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+Architecture	Readme.md	/^Architecture$/;"	s
+Daemon	pipeline/pipeline.py	/^from daemon import DaemonContext as Daemon$/;"	x
+DataProcessing	pipeline/transformer/data_processing.py	/^class DataProcessing():$/;"	c
+KAFKA_SERVERS	pipeline/kafka_queues/consumer.py	/^KAFKA_SERVERS = [$/;"	v
+KAFKA_SERVERS	pipeline/kafka_queues/producer.py	/^KAFKA_SERVERS = [$/;"	v
+LOCAL_KAFKA_SERVERS	pipeline/kafka_queues/producer.py	/^LOCAL_KAFKA_SERVERS = [$/;"	v
+LONG_DESCRIPTION	setup.py	/^    LONG_DESCRIPTION = f.read()$/;"	v
+MESSAGES	pipeline/kafka_queues/consumer.py	/^MESSAGES = []$/;"	v
+Monitoring	Readme.md	/^Monitoring$/;"	s
+MonitoringPipeline	pipeline/pipeline.py	/^class MonitoringPipeline(Daemon):$/;"	c
+__enter__	pipeline/pipeline.py	/^    def __enter__(sbox):$/;"	m	class:MonitoringPipeline
+__init__	pipeline/transformer/data_processing.py	/^    def __init__(sbox, messages):$/;"	m	class:DataProcessing
+_consume_msgs	pipeline/kafka_queues/consumer.py	/^    def _consume_msgs():$/;"	f	function:consume_topics	file:
+_get_size	pipeline/transformer/data_processing.py	/^        def _get_size(string):$/;"	f	member:DataProcessing._transform	file:
+_populate	pipeline/transformer/data_processing.py	/^        def _populate(newkey, oldkey):$/;"	f	member:DataProcessing._transform	file:
+_transform	pipeline/transformer/data_processing.py	/^    def _transform(sbox, portkey_dict):$/;"	m	class:DataProcessing
+consume_topics	pipeline/kafka_queues/consumer.py	/^def consume_topics(topic='portkey'):$/;"	f
+data_proc	pipeline/transformer/data_processing.py	/^        data_proc = DataProcessing(msg.read())$/;"	v
+from_json	pipeline/transformer/data_processing.py	/^    def from_json(sbox, message):$/;"	m	class:DataProcessing
+main	pipeline/pipeline.py	/^def main():$/;"	f
+pipeline	pipeline/pipeline.py	/^def pipeline():$/;"	f
+publish_data	pipeline/kafka_queues/producer.py	/^def publish_data(data, topic='portkey-newformat'):$/;"	f
+to_json	pipeline/transformer/data_processing.py	/^    def to_json(sbox, message):$/;"	m	class:DataProcessing
+transform	pipeline/transformer/data_processing.py	/^    def transform(sbox):$/;"	m	class:DataProcessing
